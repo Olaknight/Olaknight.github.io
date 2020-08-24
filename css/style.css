@@ -22,6 +22,7 @@ nav ul,
   justify-content: space-between;
 }
 
+
 body {
   background-color: #252627;
 }
@@ -62,6 +63,10 @@ a {
   transform: translateY(-50%);
 }
 
+a:hover {
+  color:#FF8C00;
+}
+
 .main-info-section {
   height: calc(100vh - 81.6px);
 }
@@ -86,6 +91,7 @@ div.hidden-details p {
 
 .hidden-details:hover + .hide{
   display: block;
+  transition: all 3s ease-in-out;
 }
 
 .text {
@@ -108,7 +114,7 @@ span:hover {
 }
 
 span.name {
-  color: #ED5565;
+  color: #FF8C00;
 }
 
 span.name2 {
@@ -128,8 +134,8 @@ span.m-left {
 .contact-button {
   padding: 12px 25px;
   background-color: none;
-  border: 3px solid #ED5565;
-  color: #ED5565;
+  border: 3px solid #FF8C00;
+  color: #FF8C00;
   font-size: .8rem;
   letter-spacing: 2px;
   position: relative;
@@ -146,7 +152,7 @@ span.m-left {
 
 .text a::before {
   content: '';
-  background-color: #ED5565;
+  background-color: #FF8C00;
   position: absolute;
   left: 0;
   top: 0;
@@ -270,14 +276,15 @@ div[class^='tag-'] p {
   position: relative;
   width: 600px;
   height: 20px;
-  border: 2px solid #48CFAD;
+  border: 2px solid #FF8C00;
   border-radius: 20px;
   margin-top: 7px;
 }
 
 div[class^='bar-'] {
   position: relative;
-  background-color: #48CFAD;
+  background-color: #FF8C00;
+  background-image: linear-gradient(to right, #FF8C00 , #FFA500);
   height: 12px;
   border-radius: 12px;
   margin: 2.1px;
@@ -293,10 +300,10 @@ div[class^='bar-'] {
 
 .work-category button {
   text-transform: capitalize;
-  border: 3px solid #ED5565;
+  border: 3px solid #FF8C00;
   padding: 15px 30px;
   border-radius: 50px;
-  color: #ED5565;
+  color: #FF8C00;
   font-size: 1.1rem;
   letter-spacing: 1px;
   background-color: #252627;
@@ -321,7 +328,7 @@ div[class^='category-'] p {
 }
 
 .weblink:hover {
-  color: #48CFAD;
+  color: #FF8C00;
 }
 
 .work-details {
@@ -337,7 +344,7 @@ div[class^='category-'] p {
 }
 
 .work-category .active {
-  background-color: #ED5565;
+  background-color: #FF8C00;
 }
 
 button.active {
@@ -381,7 +388,7 @@ form textarea {
 
 form input:last-child {
   width: 150px;
-  background-color: #ED5565;
+  background-color: #FF8C00;
   border: none;
   cursor: pointer;
 }
